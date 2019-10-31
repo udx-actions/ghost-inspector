@@ -13,6 +13,6 @@ with:
 ```
 npm prune --production
 git commit -a -m "version bump"
-git tag 0.0.3
+git tag $(node -e "console.log(require('./package').version)")
 git push --tags;
 ```

@@ -13,8 +13,8 @@ outputs:
   passing:
     description: 'The ID of the created Release'
 runs:
-  using: 'ubuntu-latest'
-  main: 'dist/index.js'
+  using: 'node12'
+  main: 'lib/index.js'
 branding:
   icon: 'tag'
   color: 'gray-dark'
