@@ -4,10 +4,10 @@ author: 'UDX'
 inputs:
   suite:
     description: 'The ID of the suite to test.'
-    required: true
+    required: false
   api_key:
     description: 'Your GI API key.'
-    required: true
+    required: false
 
 outputs:
   passing:
@@ -15,6 +15,3 @@ outputs:
 runs:
   using: 'node12'
   main: 'lib/index.js'
-branding:
-  icon: 'tag'
-  color: 'gray-dark'
