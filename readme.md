@@ -12,6 +12,7 @@ with:
 
 ```
 npm prune --production
-git commit -a -m "prod dependencies"
-git push origin releases/v1
+git commit -a -m "version bump"
+git tag 0.0.3
+git push --tags;
 ```
