@@ -1,4 +1,3 @@
-test/fixtures/*.json
 __tests__/runner/*
 
 # comment out in distribution branches
