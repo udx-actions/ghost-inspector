@@ -1,5 +1,5 @@
 {
-  "name": "ghostinspector",
+  "name": "ghost-inspector",
   "version": "0.0.2",
   "description": "",
   "main": "lib/index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/udx-action/ghostinspector.git"
+    "url": "git+https://github.com/udx-actions/ghost-inspector.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/udx-action/ghostinspector/issues"
+    "url": "https://github.com/udx-actions/ghost-inspector/issues"
   },
-  "homepage": "https://github.com/udx-action/ghostinspector#readme",
+  "homepage": "https://github.com/udx-actions/ghost-inspector#readme",
   "dependencies": {
     "@actions/core": "^1.2.0",
     "lodash": "^4.17.15",
