@@ -1,0 +1,20 @@
+name: 'GhostInspector'
+description: 'Run GhostInspector tests.'
+author: 'UDX'
+inputs:
+  suite:
+    description: 'The ID of the suite to test.'
+    required: true
+  api_key:
+    description: 'Your GI API key.'
+    required: true
+
+outputs:
+  passing:
+    description: 'The ID of the created Release'
+runs:
+  using: 'ubuntu-latest'
+  main: 'dist/index.js'
+branding:
+  icon: 'tag'
+  color: 'gray-dark'
