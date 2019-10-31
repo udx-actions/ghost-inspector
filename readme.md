@@ -29,6 +29,7 @@ with:
 
 ```
 npm prune --production
+git add --all;
 git commit -a -m "version bump"
 git push;
 git tag $(node -e "console.log(require('./package').version)")
