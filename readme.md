@@ -21,6 +21,10 @@
 
 **Required** ID of Ghost Inspector suite to run.
 
+### `start_url`
+
+Starting URL for test.
+
 ## Outputs
 
 ### `code`
@@ -35,6 +39,15 @@ uses: udx-actions/ghost-inspector@master
 with:
     api_key: ${{ secrets.GHOSTINSPECTOR_API_KEY }}
     suite: 5db84ff3800a6b124a51ac1a
+```
+
+```yaml
+name: Run Ghost Inspector Tests
+uses: udx-actions/ghost-inspector@master
+with:
+    api_key: ${{ secrets.GHOSTINSPECTOR_API_KEY }}
+    suite: 5db84ff3800a6b124a51ac1a
+    start_url https://udx.io
 ```
 
 ## Release (Should be done with github actions on push to master, don't run this manually)
