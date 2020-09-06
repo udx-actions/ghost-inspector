@@ -8,7 +8,7 @@ inputs:
   api_key:
     description: 'Your GI API key.'
     required: false
-  startUrl:
+  start_url:
     description: 'Start URL for test.'
     required: false
 
