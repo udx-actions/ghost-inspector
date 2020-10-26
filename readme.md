@@ -13,23 +13,21 @@
 
 ## Inputs
 
-### `api_key`
-
-**Required** API Key for Ghost Inspector.
-
-### `suite`
-
-**Required** ID of Ghost Inspector suite to run.
-
-### `start_url`
-
-Starting URL for test.
+* `api_key`. Required. API Key for Ghost Inspector.
+* `suite`. Required. ID of Ghost Inspector suite to run.
+* `start_url`. Optional. Starting URL for test.
+* `fail_if_not_pass`. Optional. Default `false`. If `1` or `true` is set, action will fail if unit test fails or does not pass.
 
 ## Outputs
 
-### `code`
-
-Response code for suite.
+* `content`. JSON stringified response body of executed suite
+* `time`.
+* `executionTime`.
+* `passing`.
+* `name`.
+* `endUrl`.
+* `screenshot`. Screenshot Original default URL.
+* `code`.
 
 ## Example usage
 
@@ -47,7 +45,7 @@ uses: udx-actions/ghost-inspector@master
 with:
     api_key: ${{ secrets.GHOSTINSPECTOR_API_KEY }}
     suite: 5db84ff3800a6b124a51ac1a
-    start_url https://udx.io
+    start_url: https://udx.io
 ```
 
 ## Release (Should be done with github actions on push to master, don't run this manually)

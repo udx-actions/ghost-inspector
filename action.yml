@@ -1,6 +1,7 @@
 name: 'GhostInspector'
-description: 'Run GhostInspector tests.'
+description: 'Runs GhostInspector specififed suit test.'
 author: 'UDX'
+
 inputs:
   suite:
     description: 'The ID of the suite to test.'
@@ -11,10 +12,28 @@ inputs:
   start_url:
     description: 'Start URL for test.'
     required: false
+  fail_if_not_pass:
+    description: 'Fail action if test does not pass'
+    required: false
 
 outputs:
+  content:
+    description: 'JSON stringified response of executed suit test'
   passing:
-    description: 'The ID of the created Release'
+    description: 'Suite Test passes or not. Boolean.'
+  code:
+    description: 'Request to GhostInspector is successfull or not.'
+  time:
+    description: 'The time when response was returned'
+  executionTime:
+    description: 'Execution time of Suite Test'
+  name:
+    description: 'Name of executed Suite Test'
+  endUrl:
+    description: 'End URL of Suite Test'
+  screenshot:
+    description: 'Screenshot Original default URL'
+
 runs:
   using: 'node12'
   main: 'lib/index.js'
