@@ -1,5 +1,5 @@
 name: 'GhostInspector'
-description: 'Run GhostInspector tests.'
+description: 'Runs GhostInspector specififed suit test.'
 author: 'UDX'
 inputs:
   suite:
