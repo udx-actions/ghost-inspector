@@ -19,7 +19,7 @@
 
 ## Outputs
 
-* `content`. JSON stringified response body of executed suite
+* `content`. The whole response body of executed suite
 * `time`.
 * `executionTime`.
 * `passing`.
