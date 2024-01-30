@@ -17,6 +17,7 @@
 * `suite`. Required. ID of Ghost Inspector suite to run.
 * `start_url`. Optional. Starting URL for test.
 * `fail_if_not_pass`. Optional. Default `false`. If `1` or `true` is set, action will fail if unit test fails or does not pass.
+* `request_options`. Optional. JSON stringified options for Ghost Inspector API. See https://ghostinspector.com/docs/api/suites/#execute for more information.
 
 ## Outputs
 

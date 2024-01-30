@@ -1,7 +1,7 @@
 {
   "name": "ghost-inspector",
-  "version": "0.0.8",
-  "description": "",
+  "version": "0.0.9",
+  "description": "A GitHub Action to trigger Ghost Inspector tests",
   "main": "lib/index.js",
   "directories": {
     "lib": "lib"
@@ -13,17 +13,17 @@
     "type": "git",
     "url": "git+https://github.com/udx-actions/ghost-inspector.git"
   },
-  "author": "",
+  "author": "UDX",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/udx-actions/ghost-inspector/issues"
   },
   "homepage": "https://github.com/udx-actions/ghost-inspector#readme",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^1.1.0",
-    "axios": "^0.20.0",
-    "debug": "^4.2.0",
-    "lodash": "^4.17.20"
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "axios": "^1.6.5",
+    "debug": "^4.3.4",
+    "lodash": "^4.17.21"
   }
 }

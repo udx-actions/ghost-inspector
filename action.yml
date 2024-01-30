@@ -15,6 +15,9 @@ inputs:
   fail_if_not_pass:
     description: 'Fail action if test does not pass'
     required: false
+  request_options:
+    description: 'Request options for test'
+    required: false
 
 outputs:
   content:
@@ -35,5 +38,5 @@ outputs:
     description: 'Screenshot Original default URL'
 
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'lib/index.js'
